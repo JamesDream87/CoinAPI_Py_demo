@@ -28522,5 +28522,17 @@
     "price_close": 9711.78,
     "volume_traded": 9299.21142123,
     "trades_count": 21630
+  },
+  {
+    "time_period_start": "2019-08-29T00:00:00.0000000Z",
+    "time_period_end": "2019-08-30T00:00:00.0000000Z",
+    "time_open": "2019-08-29T00:00:02.6690000Z",
+    "time_close": "2019-08-29T23:59:55.0950000Z",
+    "price_open": 9720.2,
+    "price_high": 9720.2,
+    "price_low": 9320.0,
+    "price_close": 9490.0,
+    "volume_traded": 7717.10637568,
+    "trades_count": 19212
   }
 ]

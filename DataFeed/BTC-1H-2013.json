@@ -60,6 +60,30 @@
     "trades_count": 3
   },
   {
+    "time_period_start": "2013-02-24T05:00:00.0000000Z",
+    "time_period_end": "2013-02-24T06:00:00.0000000Z",
+    "time_open": "2013-02-24T04:06:38.0000000Z",
+    "time_close": "2013-02-24T04:08:12.0000000Z",
+    "price_open": 29.95,
+    "price_high": 29.96,
+    "price_low": 29.95,
+    "price_close": 29.96,
+    "volume_traded": 22.022,
+    "trades_count": 3
+  },
+  {
+    "time_period_start": "2013-02-24T06:00:00.0000000Z",
+    "time_period_end": "2013-02-24T07:00:00.0000000Z",
+    "time_open": "2013-02-24T04:06:38.0000000Z",
+    "time_close": "2013-02-24T04:08:12.0000000Z",
+    "price_open": 29.95,
+    "price_high": 29.96,
+    "price_low": 29.67,
+    "price_close": 29.67,
+    "volume_traded": 22.022,
+    "trades_count": 3
+  },
+  {
     "time_period_start": "2013-02-24T07:00:00.0000000Z",
     "time_period_end": "2013-02-24T08:00:00.0000000Z",
     "time_open": "2013-02-24T07:26:16.0000000Z",
@@ -1188,6 +1212,18 @@
     "trades_count": 1
   },
   {
+    "time_period_start": "2013-02-28T05:00:00.0000000Z",
+    "time_period_end": "2013-02-28T06:00:00.0000000Z",
+    "time_open": "2013-02-28T04:44:28.0000000Z",
+    "time_close": "2013-02-28T04:44:28.0000000Z",
+    "price_open": 32.05,
+    "price_high": 32.17,
+    "price_low": 32.05,
+    "price_close": 32.17,
+    "volume_traded": 0.33807555,
+    "trades_count": 1
+  },
+  {
     "time_period_start": "2013-02-28T06:00:00.0000000Z",
     "time_period_end": "2013-02-28T07:00:00.0000000Z",
     "time_open": "2013-02-28T06:28:18.0000000Z",
@@ -2160,6 +2196,18 @@
     "trades_count": 9
   },
   {
+    "time_period_start": "2013-03-03T15:00:00.0000000Z",
+    "time_period_end": "2013-03-03T16:00:00.0000000Z",
+    "time_open": "2013-03-03T14:26:13.0000000Z",
+    "time_close": "2013-03-03T14:44:21.0000000Z",
+    "price_open": 33.94,
+    "price_high": 34.16,
+    "price_low": 33.94,
+    "price_close": 34.16,
+    "volume_traded": 11.1995,
+    "trades_count": 9
+  },
+  {
     "time_period_start": "2013-03-03T16:00:00.0000000Z",
     "time_period_end": "2013-03-03T17:00:00.0000000Z",
     "time_open": "2013-03-03T16:08:39.0000000Z",
@@ -2288,6 +2336,30 @@
     "price_high": 34.4,
     "price_low": 34.4,
     "price_close": 34.4,
+    "volume_traded": 26.71530119,
+    "trades_count": 4
+  },
+  {
+    "time_period_start": "2013-03-04T03:00:00.0000000Z",
+    "time_period_end": "2013-03-04T04:00:00.0000000Z",
+    "time_open": "2013-03-04T02:17:49.0000000Z",
+    "time_close": "2013-03-04T02:38:26.0000000Z",
+    "price_open": 34.4,
+    "price_high": 34.4,
+    "price_low": 34.4,
+    "price_close": 34.4,
+    "volume_traded": 26.71530119,
+    "trades_count": 4
+  },
+  {
+    "time_period_start": "2013-03-04T04:00:00.0000000Z",
+    "time_period_end": "2013-03-04T05:00:00.0000000Z",
+    "time_open": "2013-03-04T02:17:49.0000000Z",
+    "time_close": "2013-03-04T02:38:26.0000000Z",
+    "price_open": 34.4,
+    "price_high": 34.4,
+    "price_low": 34.41,
+    "price_close": 34.41,
     "volume_traded": 26.71530119,
     "trades_count": 4
   },
@@ -5424,6 +5496,18 @@
     "trades_count": 12
   },
   {
+    "time_period_start": "2013-03-15T02:00:00.0000000Z",
+    "time_period_end": "2013-03-15T03:00:00.0000000Z",
+    "time_open": "2013-03-15T01:28:28.0000000Z",
+    "time_close": "2013-03-15T01:55:27.0000000Z",
+    "price_open": 47.29,
+    "price_high": 47.29,
+    "price_low": 47.28,
+    "price_close": 47.29,
+    "volume_traded": 36.55026134,
+    "trades_count": 12
+  },
+  {
     "time_period_start": "2013-03-15T03:00:00.0000000Z",
     "time_period_end": "2013-03-15T04:00:00.0000000Z",
     "time_open": "2013-03-15T03:21:36.0000000Z",
@@ -6044,6 +6128,18 @@
     "price_high": 47.0,
     "price_low": 47.0,
     "price_close": 47.0,
+    "volume_traded": 3.6593617,
+    "trades_count": 1
+  },
+  {
+    "time_period_start": "2013-03-17T07:00:00.0000000Z",
+    "time_period_end": "2013-03-17T08:00:00.0000000Z",
+    "time_open": "2013-03-17T06:51:25.0000000Z",
+    "time_close": "2013-03-17T06:51:25.0000000Z",
+    "price_open": 47.0,
+    "price_high": 47.0,
+    "price_low": 46.93,
+    "price_close": 46.93,
     "volume_traded": 3.6593617,
     "trades_count": 1
   },
@@ -7628,6 +7724,18 @@
     "price_high": 71.2,
     "price_low": 68.53,
     "price_close": 71.02,
+    "volume_traded": 232.04274029,
+    "trades_count": 61
+  },
+  {
+    "time_period_start": "2013-03-22T20:00:00.0000000Z",
+    "time_period_end": "2013-03-22T21:00:00.0000000Z",
+    "time_open": "2013-03-22T19:00:08.0000000Z",
+    "time_close": "2013-03-22T19:43:32.0000000Z",
+    "price_open": 71.02,
+    "price_high": 71.03,
+    "price_low": 71.02,
+    "price_close": 71.03,
     "volume_traded": 232.04274029,
     "trades_count": 61
   },
@@ -16428,6 +16536,54 @@
     "trades_count": 81
   },
   {
+    "time_period_start": "2013-04-22T10:00:00.0000000Z",
+    "time_period_end": "2013-04-22T11:00:00.0000000Z",
+    "time_open": "2013-04-22T09:00:24.0000000Z",
+    "time_close": "2013-04-22T09:52:40.0000000Z",
+    "price_open": 121.21,
+    "price_high": 122.0,
+    "price_low": 119.05,
+    "price_close": 121.21,
+    "volume_traded": 231.35538832,
+    "trades_count": 81
+  },
+  {
+    "time_period_start": "2013-04-22T11:00:00.0000000Z",
+    "time_period_end": "2013-04-22T12:00:00.0000000Z",
+    "time_open": "2013-04-22T09:00:24.0000000Z",
+    "time_close": "2013-04-22T09:52:40.0000000Z",
+    "price_open": 121.21,
+    "price_high": 123.0,
+    "price_low": 117.05,
+    "price_close": 121.21,
+    "volume_traded": 231.35538832,
+    "trades_count": 81
+  },
+  {
+    "time_period_start": "2013-04-22T12:00:00.0000000Z",
+    "time_period_end": "2013-04-22T13:00:00.0000000Z",
+    "time_open": "2013-04-22T09:00:24.0000000Z",
+    "time_close": "2013-04-22T09:52:40.0000000Z",
+    "price_open": 121.21,
+    "price_high": 123.5,
+    "price_low": 118.01,
+    "price_close": 121.21,
+    "volume_traded": 231.35538832,
+    "trades_count": 81
+  },
+  {
+    "time_period_start": "2013-04-22T12:00:00.0000000Z",
+    "time_period_end": "2013-04-22T13:00:00.0000000Z",
+    "time_open": "2013-04-22T09:00:24.0000000Z",
+    "time_close": "2013-04-22T09:52:40.0000000Z",
+    "price_open": 121.21,
+    "price_high": 121.24,
+    "price_low": 121.21,
+    "price_close": 121.24,
+    "volume_traded": 231.35538832,
+    "trades_count": 81
+  },
+  {
     "time_period_start": "2013-04-22T14:00:00.0000000Z",
     "time_period_end": "2013-04-22T15:00:00.0000000Z",
     "time_open": "2013-04-22T14:23:08.0000000Z",
@@ -18332,6 +18488,30 @@
     "price_high": 136.63,
     "price_low": 134.85,
     "price_close": 136.63,
+    "volume_traded": 29.65699244,
+    "trades_count": 79
+  },
+  {
+    "time_period_start": "2013-04-29T05:00:00.0000000Z",
+    "time_period_end": "2013-04-29T06:00:00.0000000Z",
+    "time_open": "2013-04-29T04:01:49.0000000Z",
+    "time_close": "2013-04-29T04:28:50.0000000Z",
+    "price_open": 136.63,
+    "price_high": 136.63,
+    "price_low": 134.85,
+    "price_close": 134.85,
+    "volume_traded": 29.65699244,
+    "trades_count": 79
+  },
+  {
+    "time_period_start": "2013-04-29T06:00:00.0000000Z",
+    "time_period_end": "2013-04-29T07:00:00.0000000Z",
+    "time_open": "2013-04-29T04:01:49.0000000Z",
+    "time_close": "2013-04-29T04:28:50.0000000Z",
+    "price_open": 134.85,
+    "price_high": 136.63,
+    "price_low": 134.85,
+    "price_close": 135.32,
     "volume_traded": 29.65699244,
     "trades_count": 79
   },
@@ -70472,6 +70652,42 @@
     "price_high": 182.46,
     "price_low": 182.01,
     "price_close": 182.01,
+    "volume_traded": 14.2636643,
+    "trades_count": 14
+  },
+  {
+    "time_period_start": "2013-10-27T08:00:00.0000000Z",
+    "time_period_end": "2013-10-27T09:00:00.0000000Z",
+    "time_open": "2013-10-27T07:00:16.0000000Z",
+    "time_close": "2013-10-27T07:05:03.0000000Z",
+    "price_open": 182.01,
+    "price_high": 182.46,
+    "price_low": 182.01,
+    "price_close": 182.01,
+    "volume_traded": 14.2636643,
+    "trades_count": 14
+  },
+  {
+    "time_period_start": "2013-10-27T09:00:00.0000000Z",
+    "time_period_end": "2013-10-27T10:00:00.0000000Z",
+    "time_open": "2013-10-27T07:00:16.0000000Z",
+    "time_close": "2013-10-27T07:05:03.0000000Z",
+    "price_open": 182.01,
+    "price_high": 182.44,
+    "price_low": 182.01,
+    "price_close": 181.01,
+    "volume_traded": 14.2636643,
+    "trades_count": 14
+  },
+  {
+    "time_period_start": "2013-10-27T10:00:00.0000000Z",
+    "time_period_end": "2013-10-27T11:00:00.0000000Z",
+    "time_open": "2013-10-27T07:00:16.0000000Z",
+    "time_close": "2013-10-27T07:05:03.0000000Z",
+    "price_open": 181.01,
+    "price_high": 182.46,
+    "price_low": 181.01,
+    "price_close": 182.46,
     "volume_traded": 14.2636643,
     "trades_count": 14
   },

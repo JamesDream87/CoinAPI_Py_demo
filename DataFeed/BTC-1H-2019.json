@@ -44472,6 +44472,42 @@
     "trades_count": 15
   },
   {
+    "time_period_start": "2019-06-04T10:00:00.0000000Z",
+    "time_period_end": "2019-06-04T11:00:00.0000000Z",
+    "time_open": "2019-06-04T09:00:00.0000000Z",
+    "time_close": "2019-06-04T09:00:05.0000000Z",
+    "price_open": 7922.34,
+    "price_high": 7922.34,
+    "price_low": 7918.83,
+    "price_close": 7918.83,
+    "volume_traded": 0.96114893,
+    "trades_count": 15
+  },
+  {
+    "time_period_start": "2019-06-04T11:00:00.0000000Z",
+    "time_period_end": "2019-06-04T12:00:00.0000000Z",
+    "time_open": "2019-06-04T09:00:00.0000000Z",
+    "time_close": "2019-06-04T09:00:05.0000000Z",
+    "price_open": 7918.83,
+    "price_high": 7922.34,
+    "price_low": 7918.83,
+    "price_close": 7922.34,
+    "volume_traded": 0.96114893,
+    "trades_count": 15
+  },
+  {
+    "time_period_start": "2019-06-04T12:00:00.0000000Z",
+    "time_period_end": "2019-06-04T13:00:00.0000000Z",
+    "time_open": "2019-06-04T09:00:00.0000000Z",
+    "time_close": "2019-06-04T09:00:05.0000000Z",
+    "price_open": 7918.83,
+    "price_high": 7985.27,
+    "price_low": 7918.83,
+    "price_close": 7985.27,
+    "volume_traded": 0.96114893,
+    "trades_count": 15
+  },
+  {
     "time_period_start": "2019-06-04T13:00:00.0000000Z",
     "time_period_end": "2019-06-04T14:00:00.0000000Z",
     "time_open": "2019-06-04T13:53:54.0000000Z",

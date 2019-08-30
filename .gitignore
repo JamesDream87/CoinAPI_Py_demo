@@ -2,6 +2,7 @@
 node_modules
 /dist
 config.py
+__pycache__
 
 # Log files
 npm-debug.log*

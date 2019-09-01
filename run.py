@@ -90,9 +90,9 @@ def WriteSQL(time):
     json_str[i]['time_period_end'] = json_str[i]['time_period_end'].replace('0000000Z', '000000Z')
     
     if time == '1D':
-      sql = 'INSERT INTO candles_1d(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BitStamp",%s,%s,%s,%s,%s,%s,%s,%s,"1D")'
+      sql = 'INSERT INTO bitstamp_candles_1d(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BitStamp",%s,%s,%s,%s,%s,%s,%s,%s,"1D")'
     elif time == '1H':
-      sql = 'INSERT INTO candles_1h(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BitStamp",%s,%s,%s,%s,%s,%s,%s,%s,"1H")'
+      sql = 'INSERT INTO bitstamp_candles_1h(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BitStamp",%s,%s,%s,%s,%s,%s,%s,%s,"1H")'
     
     cursor.execute(sql,(json_str[i]['time_period_start'],json_str[i]['time_period_end'],json_str[i]['price_open'],
     json_str[i]['price_high'],json_str[i]['price_low'],json_str[i]['price_close'],json_str[i]['volume_traded'],json_str[i]['trades_count']))

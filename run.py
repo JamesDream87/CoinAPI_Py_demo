@@ -19,7 +19,7 @@ def WriteJson(PTime):
   end = end.strftime('%Y-%m-%dT%H:%M:%S')
   start = start.strftime('%Y-%m-%dT%H:%M:%S')
 
-  url = base + 'period_id=' + PTime + '&time_start=' + start + '&time_end=' + end + '&limit=' + limit
+  url = base + 'period_id=' + period + '&time_start=' + start + '&time_end=' + end + '&limit=' + limit
   headers = {'X-CoinAPI-Key': con['key']}
   response = requests.get(url, headers=headers)
   json_str = json.dumps(response.json())

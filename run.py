@@ -27,7 +27,7 @@ def WriteJson(PTime):
   if PTime == '1Day':
     fo = open("1D.json", "w", encoding='utf-8')
   elif PTime == '1HRS':
-    fo = open("./DataFeed/ETH-1H-2019.json", "w", encoding='utf-8')
+    fo = open("1H.json", "w", encoding='utf-8')
 
   fo.write(json_str)
   res = 1
@@ -90,9 +90,9 @@ def WriteSQL(time):
     json_str[i]['time_period_end'] = json_str[i]['time_period_end'].replace('0000000Z', '000000Z')
     
     if time == '1D':
-      sql = 'INSERT INTO bitstamp_btc_1d(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BitStamp",%s,%s,%s,%s,%s,%s,%s,%s,"1D")'
+      sql = 'INSERT INTO BITFINEX_btc_1d(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BITFINEX",%s,%s,%s,%s,%s,%s,%s,%s,"1D")'
     elif time == '1H':
-      sql = 'INSERT INTO bitstamp_btc_1h(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BitStamp",%s,%s,%s,%s,%s,%s,%s,%s,"1H")'
+      sql = 'INSERT INTO BITFINEX_btc_1h(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BITFINEX",%s,%s,%s,%s,%s,%s,%s,%s,"1H")'
     
     cursor.execute(sql,(json_str[i]['time_period_start'],json_str[i]['time_period_end'],json_str[i]['price_open'],
     json_str[i]['price_high'],json_str[i]['price_low'],json_str[i]['price_close'],json_str[i]['volume_traded'],json_str[i]['trades_count']))
@@ -121,22 +121,22 @@ def test():
   fo = open("./DataFeed/ETH-1H-2019.json")
 
   json_str = json.loads(fo.read())
-  num = len(json_str)-1
-  result = 0
+
+  #Connect the MySQL
+  con = config.config
+  db = pymysql.connect(con['host'], con['user'], con['password'], con['database'], charset='utf8mb4')
+  cursor = db.cursor()
+  
   for i in range(len(json_str)):
-    if i < num:
-      json_str[i]['time_period_start'] = json_str[i]['time_period_start'].replace('0000000Z', '000000Z')
-      json_str[i+1]['time_period_start'] = json_str[i+1]['time_period_start'].replace('0000000Z', '000000Z')
-      d1 = datetime.datetime.strptime(json_str[i]['time_period_start'], '%Y-%m-%dT%H:%M:%S.%fZ')
-      d2 = datetime.datetime.strptime(json_str[i+1]['time_period_start'], '%Y-%m-%dT%H:%M:%S.%fZ')
-      d3 = (d2-d1).days
-      if d3 == 0 :
-        d4 = (d2-d1).seconds
-        if(d4 > 3600):
-          print(f'缺失位置:{d1}  至  {d2},时长:{(d4-3600)/3600}小时')
-          result += 1
-      else:
-        if(d3 > 1):
-          print(f'缺失位置:{d1}  至  {d2},时长:{d3-1}天')
+    json_str[i]['time_period_start'] = json_str[i]['time_period_start'].replace('0000000Z', '000000Z')
+    json_str[i]['time_period_end'] = json_str[i]['time_period_end'].replace('0000000Z', '000000Z')
+    
+    sql = 'INSERT INTO BITFINEX_ETH_1h(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BITFINEX",%s,%s,%s,%s,%s,%s,%s,%s,"1H")'
+    
+    cursor.execute(sql,(json_str[i]['time_period_start'],json_str[i]['time_period_end'],json_str[i]['price_open'],
+    json_str[i]['price_high'],json_str[i]['price_low'],json_str[i]['price_close'],json_str[i]['volume_traded'],json_str[i]['trades_count']))
+    db.commit()
+    
+  db.close()
 
 test()

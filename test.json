@@ -1,1 +1,44 @@
-[{"symbol_id": "OKEX_SPOT_BTC_USDT", "exchange_id": "OKEX", "symbol_type": "SPOT", "asset_id_base": "BTC", "asset_id_quote": "USDT", "data_start": "2017-12-18", "data_end": "2019-09-01", "data_quote_start": "2017-12-18T21:01:54.6760007Z", "data_quote_end": "2019-09-01T03:21:17.7430000Z", "data_orderbook_start": "2017-12-18T21:01:54.6760007Z", "data_orderbook_end": "2019-09-01T03:25:37.5560000Z", "data_trade_start": "2017-12-18T21:00:28.0000000Z", "data_trade_end": "2019-09-01T03:21:35.2880000Z", "volume_1hrs": 189.74247669, "volume_1hrs_usd": 1827730.23, "volume_1day": 10393.25220507, "volume_1day_usd": 100114963.93, "volume_1mth": 1029296.46177928, "volume_1mth_usd": 9914892481.41}, {"symbol_id": "OKEX_SPOT_BTC_USDK", "exchange_id": "OKEX", "symbol_type": "SPOT", "asset_id_base": "BTC", "asset_id_quote": "USDK", "data_start": "2019-06-03", "data_end": "2019-09-01", "data_quote_start": "2019-06-03T06:01:42.2018918Z", "data_quote_end": "2019-09-01T03:23:14.5580000Z", "data_orderbook_start": "2019-06-03T06:01:42.2018918Z", "data_orderbook_end": "2019-09-01T03:24:11.2100000Z", "data_trade_start": "2019-06-03T06:24:08.9310917Z", "data_trade_end": "2019-09-01T03:16:12.4260000Z", "volume_1hrs": 0.63552177, "volume_1hrs_usd": 6121.78, "volume_1day": 4347.85740081, "volume_1day_usd": 41881557.21, "volume_1mth": 98170.80751053, "volume_1mth_usd": 945648836.29}]
+[
+  {
+    "symbol_id": "BITFINEX_SPOT_ETH_USD",
+    "exchange_id": "BITFINEX",
+    "symbol_type": "SPOT",
+    "asset_id_base": "ETH",
+    "asset_id_quote": "USD",
+    "data_start": "2016-03-09",
+    "data_end": "2019-09-01",
+    "data_quote_start": "2016-03-15T00:09:32.6030000Z",
+    "data_quote_end": "2019-09-01T07:16:23.6767781Z",
+    "data_orderbook_start": "2016-03-15T00:09:32.6030000Z",
+    "data_orderbook_end": "2019-09-01T07:09:31.2059237Z",
+    "data_trade_start": "2016-03-09T16:04:35.0000000Z",
+    "data_trade_end": "2019-09-01T07:10:18.0000000Z",
+    "volume_1hrs": 1429.54488568,
+    "volume_1hrs_usd": 246674.47,
+    "volume_1day": 48208.19095539,
+    "volume_1day_usd": 8318542.42,
+    "volume_1mth": 1899381.22371474,
+    "volume_1mth_usd": 327746861.51
+  },
+  {
+    "symbol_id": "BITFINEX_SPOT_ETH_USDT",
+    "exchange_id": "BITFINEX",
+    "symbol_type": "SPOT",
+    "asset_id_base": "ETH",
+    "asset_id_quote": "USDT",
+    "data_start": "2019-03-11",
+    "data_end": "2019-09-01",
+    "data_quote_start": "2019-03-11T09:49:23.3936871Z",
+    "data_quote_end": "2019-09-01T07:06:48.6105889Z",
+    "data_orderbook_start": "2019-03-11T09:49:23.3936871Z",
+    "data_orderbook_end": "2019-09-01T07:16:55.0196639Z",
+    "data_trade_start": "2019-03-11T10:03:54.0000000Z",
+    "data_trade_end": "2019-09-01T07:07:19.0000000Z",
+    "volume_1hrs": 3.62554358,
+    "volume_1hrs_usd": 625.6,
+    "volume_1day": 3408.36147347,
+    "volume_1day_usd": 588128.26,
+    "volume_1mth": 164184.08248894,
+    "volume_1mth_usd": 28330709.54
+  }
+]

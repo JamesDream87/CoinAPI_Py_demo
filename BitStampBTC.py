@@ -7,7 +7,7 @@ import datetime
 
 def WriteJson(PTime):
   con = config.config
-  base = 'https://rest.coinapi.io/v1/ohlcv/Binance_SPOT_BTC_USDT/history?'
+  base = 'https://rest.coinapi.io/v1/ohlcv/BITSTAMP_SPOT_BTC_USD/history?'
   period = PTime
   limit = '50'
 
@@ -90,9 +90,9 @@ def WriteSQL(time):
     json_str[i]['time_period_end'] = json_str[i]['time_period_end'].replace('0000000Z', '000000Z')
     
     if time == '1D':
-      sql = 'INSERT INTO Binance_candles_1d(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BitStamp",%s,%s,%s,%s,%s,%s,%s,%s,"1D")'
+      sql = 'INSERT INTO bitstamp_btc_1d(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BitStamp",%s,%s,%s,%s,%s,%s,%s,%s,"1D")'
     elif time == '1H':
-      sql = 'INSERT INTO Binance_candles_1h(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BitStamp",%s,%s,%s,%s,%s,%s,%s,%s,"1H")'
+      sql = 'INSERT INTO bitstamp_btc_1h(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BitStamp",%s,%s,%s,%s,%s,%s,%s,%s,"1H")'
     
     cursor.execute(sql,(json_str[i]['time_period_start'],json_str[i]['time_period_end'],json_str[i]['price_open'],
     json_str[i]['price_high'],json_str[i]['price_low'],json_str[i]['price_close'],json_str[i]['volume_traded'],json_str[i]['trades_count']))
@@ -102,20 +102,19 @@ def WriteSQL(time):
 
 
 def Main():
-  list = ['1HRS']
+  list = ['1Day', '1HRS']
   # Get data and check,Write it into database,if the function WriteJson return 1, run the funtion CheckJson.
   # If funtion CheckJson return 0, it means have not any error, run the funtion WriteSQL.
   # 如果WJRes等于1则代表写入Json文件成功，执行检查Json，检查Json函数如果返回0则代表没有错误
   for i in list:
-    # WJRes = WriteJson(i)
-    # if WJRes == 1:
+    WJRes = WriteJson(i)
+    if WJRes == 1:
       CJRes = CheckJson(i)
       if CJRes == 0:
         WriteSQL(i)
-        # print(1)
       else:
         print('数据有误！请检查！')
-    # else:
-    #   print('写入Json文件失败')
+    else:
+      print('写入Json文件失败')
 
 Main()

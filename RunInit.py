@@ -1,6 +1,7 @@
 import BitFinexETH
 import BitStampBTC
 import BinanceBTC
+import HuoBiEOS
 
 def Init():
   # write bitstamp btc
@@ -9,5 +10,7 @@ def Init():
   BinanceBTC.Main()
   # write bitfinex eth 
   BitFinexETH.Main()
+  # write huobi eos
+  HuoBiEOS.Main()
 
 Init()

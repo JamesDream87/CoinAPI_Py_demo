@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 /dist
+/function
 config.py
 __pycache__
 

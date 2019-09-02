@@ -7,15 +7,14 @@ import datetime
 
 def WriteJson(PTime):
   con = config.config
-  base = 'https://rest.coinapi.io/v1/ohlcv/BITSTAMP_SPOT_BTC_USD/history?'
+  base = 'https://rest.coinapi.io/v1/ohlcv/BITFINEX_SPOT_ETH_USD/history?'
   period = PTime
   limit = '50'
 
-  # Set the Start time and End time
+  # Set the Start time and End time and # format the time
   end = datetime.date.today()
   start = end + datetime.timedelta(-1)
 
-  # format the time
   end = end.strftime('%Y-%m-%dT%H:%M:%S')
   start = start.strftime('%Y-%m-%dT%H:%M:%S')
 
@@ -90,9 +89,9 @@ def WriteSQL(time):
     json_str[i]['time_period_end'] = json_str[i]['time_period_end'].replace('0000000Z', '000000Z')
     
     if time == '1D':
-      sql = 'INSERT INTO bitstamp_btc_1d(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BitStamp",%s,%s,%s,%s,%s,%s,%s,%s,"1D")'
+      sql = 'INSERT INTO BITFINEX_eth_1d(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BITFINEX",%s,%s,%s,%s,%s,%s,%s,%s,"1D")'
     elif time == '1H':
-      sql = 'INSERT INTO bitstamp_btc_1h(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BitStamp",%s,%s,%s,%s,%s,%s,%s,%s,"1H")'
+      sql = 'INSERT INTO BITFINEX_eth_1h(exchange,start_at,end_at,open,high,low,close,volume,trades_count,interval_at)values("BITFINEX",%s,%s,%s,%s,%s,%s,%s,%s,"1H")'
     
     cursor.execute(sql,(json_str[i]['time_period_start'],json_str[i]['time_period_end'],json_str[i]['price_open'],
     json_str[i]['price_high'],json_str[i]['price_low'],json_str[i]['price_close'],json_str[i]['volume_traded'],json_str[i]['trades_count']))

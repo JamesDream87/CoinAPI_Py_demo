@@ -7,7 +7,7 @@ import datetime
 
 def WriteJson(PTime):
   con = config.config
-  base = 'https://rest.coinapi.io/v1/ohlcv/Binance_SPOT_BTC_USD/history?'
+  base = 'https://rest.coinapi.io/v1/ohlcv/Binance_SPOT_BTC_USDT/history?'
   period = PTime
   limit = '50'
 
@@ -112,10 +112,7 @@ def Main():
       CJRes = CheckJson(i)
       if CJRes == 0:
         WriteSQL(i)
-        # print(1)
       else:
         print('数据有误！请检查！')
     else:
       print('写入Json文件失败')
-
-Main()

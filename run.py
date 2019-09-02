@@ -6,8 +6,8 @@ def Init():
   # write bitstamp btc
   BitStampBTC.Main()
   # write  binance btc
-  # BinanceBTC.Main()
+  BinanceBTC.Main()
   # write bitfinex eth 
-  # BitFinexETH.Main()
+  BitFinexETH.Main()
 
 Init()

@@ -101,7 +101,7 @@ def WriteSQL(time):
 
 
 def Main():
-  list = ['1Day', '1HRS']
+  list = ['1Day','1HRS']
   # Get data and check,Write it into database,if the function WriteJson return 1, run the funtion CheckJson.
   # If funtion CheckJson return 0, it means have not any error, run the funtion WriteSQL.
   # 如果WJRes等于1则代表写入Json文件成功，执行检查Json，检查Json函数如果返回0则代表没有错误
@@ -112,6 +112,6 @@ def Main():
       if CJRes == 0:
         WriteSQL(i)
       else:
-        print('数据有误！请检查！')
+        print(f'数据有误！请检查！{i}-BITFINEX_ETH')
     else:
       print('写入Json文件失败')

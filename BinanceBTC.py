@@ -113,6 +113,6 @@ def Main():
       if CJRes == 0:
         WriteSQL(i)
       else:
-        print('数据有误！请检查！')
+        print(f'数据有误！请检查！{i}-Binance_BTC')
     else:
       print('写入Json文件失败')

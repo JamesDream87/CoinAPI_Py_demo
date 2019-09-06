@@ -1,1 +1,14 @@
-[{"time_period_start": "2019-09-02T00:00:00.0000000Z", "time_period_end": "2019-09-03T00:00:00.0000000Z", "time_open": "2019-09-02T00:00:26.0000000Z", "time_close": "2019-09-02T23:59:02.0000000Z", "price_open": 171.49, "price_high": 181.69, "price_low": 170.55, "price_close": 178.7, "volume_traded": 56405.44173316, "trades_count": 10846}]
+[
+  {
+    "time_period_start": "2019-09-06T00:00:00.0000000Z",
+    "time_period_end": "2019-09-07T00:00:00.0000000Z",
+    "time_open": "2019-09-06T00:00:00.1320000Z",
+    "time_close": "2019-09-06T07:47:21.8230000Z",
+    "price_open": 10563.13,
+    "price_high": 10777.01,
+    "price_low": 10548.51,
+    "price_close": 10704.71,
+    "volume_traded": 15333.018621,
+    "trades_count": 113658
+  }
+]
